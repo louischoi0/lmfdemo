@@ -52,7 +52,6 @@ class sparseMatrix :
     v = []
 
     newxlen =  self.xlen + count if axis == "x" else self.xlen
-    #self.xlen += count
 
     if axis == "x" :
 
@@ -156,7 +155,6 @@ class sparseMatrix :
     return r
 
 if __name__ == "__main__" :
-
     m = sparseMatrix(5,5)
     m.setvalue(1,1,9)
     m.setvalue(2,2,9)
